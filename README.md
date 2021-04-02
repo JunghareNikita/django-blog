@@ -11,7 +11,7 @@ Non-authenticated users can see all blog posts, but cannot add new posts
 	
 # quick start:
 
-To get this projects up and running locally on your computer
+To get this projects up and running locally on your computer.
 1)Assumming you hav python setup run the following commond:
  python manage.py makemigrations
  python manage.py migrate
