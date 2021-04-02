@@ -1,7 +1,7 @@
 # django-blog
 django blog project
 
-About:
+# About:
 
 This is demo project for practicing Django. The idea was to build some basic blogging platform. 
 There is login and signup functionality included
