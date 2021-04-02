@@ -1,0 +1,46 @@
+.col{
+    padding: 1rem;
+    justify-content: center;
+}
+.card{
+    box-shadow: 0 0 1rem rgba(0,0,0,0.1);
+}
+.card-title{
+    background: #17a2b8!important;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    padding : 10px;
+}
+
+/* ========================= login section ============================== */
+#container{
+    margin: 50px auto;
+    width: 28em;
+    min-width: 300px;
+    height: auto;
+    background: #fff;
+    border: 1px solid black;
+    border-radius: 4px;
+    overflow: hidden;
+}
+#container .header{
+    background:  #17a2b8!important;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+.content{
+    padding: 20px 20px 0;
+}
+
+
+#container .main-content{
+    width: 100%;
+}
+
+@media (max-width: 767px){
+    #container{
+        width: auto;
+    }
+}

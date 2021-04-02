@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{%extends 'blog/navbar.html'%}
+{% load crispy_forms_tags %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+</head>
+<body>
+{% block content %}
+<div class="container">
+    <div id="container">
+        <div class="header"><h4>User Signup</h4></div>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="content">
+                {{form|crispy}}
+                <input type="submit" name="submit" class="btn btn-info">
+
+                {% if form.non_field_errors %}
+                 {% for error in form.non_field_errors %}
+                    <p>{{error}}</p>
+                 {% endfor%}
+                 {% endif %}
+        </form>
+                 <a href="{% url 'login'%}">login</a>
+                 {% if error%}
+                  {{error}}
+                 {% endif%}
+              </div>
+    </div>
+</div>
+{% endblock %}
+</body>
+</html>

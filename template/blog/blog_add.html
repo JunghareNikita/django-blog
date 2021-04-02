@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends 'blog/after_login_navbar.html' %}
+{% load crispy_forms_tags %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Blog</title>
+</head>
+<body>
+{% block content%}
+<div class="container">
+    <form method="POST">
+        {% csrf_token %}
+        {{form|crispy}}
+        <input type="submit" value="Add" class="btn btn-primary">
+        <a href="{%url 'dashboard'%}" class="btn btn-danger">cancel</a>
+    </form>
+</div>
+{% endblock %}
+</body>
+</html>

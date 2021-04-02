@@ -1,0 +1,26 @@
+{% extends 'blog/after_login_navbar.html' %}
+{% load crispy_forms_tags%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update</title>
+</head>
+<body>
+{% block content %}
+<div id="container">
+    <form method="POST">
+    {% csrf_token %}
+        <div class="content">
+            {{form.username|as_crispy_field}}
+            {{form.first_name|as_crispy_field}}
+            {{form.last_name|as_crispy_field}}
+            {{form.email|as_crispy_field}}
+            <input type="submit" value="submit" class="btn btn-info">
+        </div>
+     </form>
+</div>
+
+{% endblock %}
+</body>
+</html>

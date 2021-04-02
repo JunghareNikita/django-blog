@@ -1,0 +1,30 @@
+{% extends 'blog/navbar.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'bootstrap-4/css/bootstrap.min.css'%}">
+
+</head>
+<body>
+{%block content%}
+<div class="container">
+    <div class="blogs">
+        <div class="row">
+            {%for blog in blog%}
+            <div class="col col-12">
+               <div class="card">
+                    <div class="card-title">{{blog.title}}</div>
+                    <div class="card-body">{{blog.desc}}</div>
+                </div>
+           </div>
+            {%endfor%}
+        </div>
+    </div>
+</div>
+{% endblock %}
+</body>
+</html>
