@@ -20,10 +20,12 @@ python manage.py makemigrations
 
 python manage.py migrate  
 
-python manage.py createsuperuser'''
+python manage.py createsuperuser 
 
-2)open a browser to http://127.0.0.1:8000/admin/auth/group/ to open admin site. create group Admin and Author
+'''
 
-3)then run demo project :
+2)Open a browser to http://127.0.0.1:8000/admin/auth/group/ to open admin site. Create group Admin and Author
+
+3)Then run demo project :
 
 python manage.py runserver 
