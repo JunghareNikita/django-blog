@@ -15,11 +15,12 @@ To get this projects up and running locally on your computer.
 
 1)Assumming you hav python setup run the following commond:
 
+'''
 python manage.py makemigrations 
 
 python manage.py migrate  
 
-python manage.py createsuperuser
+python manage.py createsuperuser'''
 
 2)open a browser to http://127.0.0.1:8000/admin/auth/group/ to open admin site. create group Admin and Author
 
