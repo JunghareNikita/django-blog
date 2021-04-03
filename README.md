@@ -23,6 +23,6 @@ python manage.py createsuperuser
 
 2)open a browser to http://127.0.0.1:8000/admin/auth/group/ to open admin site. create group Admin and Author
 
-3) then run demo project :
+3)then run demo project :
 
-  python manage.py runserver 
+python manage.py runserver 
